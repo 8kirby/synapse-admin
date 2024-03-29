@@ -25,7 +25,7 @@ const mxcUrlToHttp = mxcUrl => {
   return `${homeserver}/_matrix/media/r0/thumbnail/${serverName}/${mediaId}?width=24&height=24&method=scale`;
 };
 
-const resourceMap = {
+export const resourceMap = {
   users: {
     path: "/_synapse/admin/v2/users",
     map: u => ({
